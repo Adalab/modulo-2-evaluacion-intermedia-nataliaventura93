@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Dados y Apuestas</h1>
+    <h2>Introduce aquí tu jugada:</h2>
+    <form>
+        <label for="number">¿Qué número apuestas del 1 al 6?</label>
+        <select class="js_number" id="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <input class="js_inputBet" type="number" id="apuesta" name="apuesta" placeholder="¿Cuánto apuestas?">
+        <button class="js_btnPlay">Jugar</button>
+    </form>
+    <h2 class="js_message">Vamos a Jugar!</h2>
+    <p class="js_balance">Saldo: 50</p> 
+    <script src="./main.js"></script>
+</body>
+</html>
