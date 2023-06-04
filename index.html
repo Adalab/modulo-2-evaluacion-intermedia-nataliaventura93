@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de dados y apuestas</title>
     <link rel="icontitle" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body class="body">
     <h1 class="title">Dados y Apuestas</h1>
-    <img class="dice"src="../images/imagen.svg">
+    <img class="dice"src="./images/imagen.svg">
     <h2 class="subtitle">Introduce aquí tu jugada:</h2>
     <form>
-        <select class="js_number" name="number" id="number">
-            <option hidden selected>¿Qué número apuestas del 1 al 6?</option>
+        <select class="js_number" type="number" name="number" id="number">
+            <option hidden selected value="0">¿Qué número apuestas del 1 al 6?</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -24,10 +24,10 @@
         </select>
         <input class="js_inputBet" type="number" id="apuesta" name="apuesta" placeholder="¿Cuánto apuestas?">
         <button class="buttonPlay js_btnPlay">Jugar</button>
-        <button class="buttonReset">Reiniciar juego</button>
+        <button class="buttonReset collapsed">Reiniciar juego</button>
     </form>
     <h2 class="message js_message">Vamos a Jugar!</h2>
-    <p class="balance js_balance">Saldo: 50</p> 
-    <script src="./main.js"></script>
+    <p class="balance js_balance">Saldo: 50€</p> 
+    <script src="./Js/main.js"></script>
 </body>
 </html>
