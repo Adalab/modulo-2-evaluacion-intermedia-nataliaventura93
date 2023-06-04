@@ -17,14 +17,18 @@ Cuando la jugadora introduzca un número que coincida con el número aleatorio, 
 mensaje: Has ganado el doble de lo apostado .
 Cuando la jugadora introduzca un número que no coincida con el número aleatorio, se muestra
 el mensaje: Has perdido lo apostado . Pasos para realizar el juego Para realizar el juego tenemos que realizar las siguientes funcionalidades desde JavaScript:
+
 1. Crear una maquetación mínima con el select, el botón y el espacio para el resultado.
-README.MD 5/30/2023
-2 / 2 2. Generar un número aleatorio entre 1 y 6 con la ayuda de Math.random y Math.ceil. Puedes usar la
+
+2. Generar un número aleatorio entre 1 y 6 con la ayuda de Math.random y Math.ceil. Puedes usar la
 siguiente función, copia estas 3 líneas de código en vuestro JS y no las modifiquéis:
-function getRandomNumber(max) {
- return Math.ceil(Math.random() * max);
-}3. Comparar el número que la jugadora ha seleccionado con el número aleatorio y pintar el resultado
+  function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+  }
+  
+3. Comparar el número que la jugadora ha seleccionado con el número aleatorio y pintar el resultado
 correspondientes en la pantalla.
+
 Según vayas trabajando en el ejercicio, haz nuevas versiones del mismo y sube los cambios a GitHub. De esta
 forma podremos ver cómo vas avanzando. También publica el resultado usando GitHub Pages (recuerda
 configurarlo en las preferencias del proyecto) y pon el enlace a GitHub Pages en la descripción del repositorio.
@@ -41,6 +45,7 @@ a cero y vuelve a aparecer el botón Jugar.
 Cuando finalice el juego, muestra quién ha ganado la partida: la computadora o la usuaria.
 Saca tu lado creativo y maqueta y decora tu página con estilo.
 Recuerda esto es un bonus, no pasa nada si no lo haces!
+
 Entrega
 La evaluación solo se considerará terminada cuando:
 Esté publicada en GitHub Pages (apuntando a la rama main/master) y esté funcionando.
