@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de dados y apuestas</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icontitle" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../Css/style.css">
 </head>
-<body>
-    <h1>Dados y Apuestas</h1>
-    <h2>Introduce aquí tu jugada:</h2>
+<body class="body">
+    <h1 class="title">Dados y Apuestas</h1>
+    <img class="dice"src="../images/imagen.svg">
+    <h2 class="subtitle">Introduce aquí tu jugada:</h2>
     <form>
         <select class="js_number" name="number" id="number">
             <option hidden selected>¿Qué número apuestas del 1 al 6?</option>
@@ -21,10 +23,11 @@
             <option value="6">6</option>
         </select>
         <input class="js_inputBet" type="number" id="apuesta" name="apuesta" placeholder="¿Cuánto apuestas?">
-        <button class="js_btnPlay">Jugar</button>
+        <button class="buttonPlay js_btnPlay">Jugar</button>
+        <button class="buttonReset">Reiniciar juego</button>
     </form>
-    <h2 class="js_message">Vamos a Jugar!</h2>
-    <p class="js_balance">Saldo: 50</p> 
+    <h2 class="message js_message">Vamos a Jugar!</h2>
+    <p class="balance js_balance">Saldo: 50</p> 
     <script src="./main.js"></script>
 </body>
 </html>

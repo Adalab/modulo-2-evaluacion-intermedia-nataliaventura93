@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Shadows';
+  src: url('../Fonts/ShadowsIntoLight-Regular.ttf');
+}
+:root {
+  font-family: Shadows;
+}
+.body {
+  height: 100vh;
+  background-color: #ffffd1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 50px;
+}
+.dice {
+  width: 30%;
+}
+
+.subtitle {
+  font-size: 40px;
+}
+.buttonPlay {
+  font-family: Shadows;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100px;
+  height: 80px;
+  background-color: #05abd0;
+  border-radius: 50%;
+}
+
+.buttonReset {
+  display: none;
+  font-family: Shadows;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100px;
+  height: 80px;
+  background-color: #05abd0;
+  border-radius: 50%;
+}
+
+.message {
+  font-size: 30px;
+}
+.balance {
+    font-size: 25px;
+}
