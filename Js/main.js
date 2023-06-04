@@ -15,10 +15,13 @@ function setInnerText(component, text) {
   component.innerHTML = text;
 }
 
-btnPlay.addEventListener('click', (event) => {
+const handlePlayClick = (event) => {
   event.preventDefault();
   if (selectedBet.value > saldo) {
-    setInnerText(message, 'No tienes suficiente saldo para apostar esa cantidad');
+    setInnerText(
+      message,
+      'No tienes suficiente saldo para apostar esa cantidad'
+    );
   } else {
     let randomNumber = getRandomNumber(6);
     console.log(randomNumber);
@@ -32,19 +35,29 @@ btnPlay.addEventListener('click', (event) => {
       setInnerText(balance, `Saldo: ${saldo}€`);
     }
     if (saldo >= 200) {
-        setInnerText(message, 'Enhorabuena! Has llegado al final del juego y has ganado!');
+      setInnerText(
+        message,
+        'Enhorabuena! Has llegado al final del juego y has ganado!'
+      );
       btnPlay.classList.add('collapsed');
       btnReset.classList.remove('collapsed');
     } else if (saldo <= 0) {
-        setInnerText(message, 'Oh! No tienes suficiente saldo para apostar... La máquina te ha ganado.');
+      setInnerText(
+        message,
+        'Oh! No tienes suficiente saldo para apostar... La máquina te ha ganado.'
+      );
       btnPlay.classList.add('collapsed');
       btnReset.classList.remove('collapsed');
     }
   }
-});
+};
 
-btnReset.addEventListener('click', (event) => {
+const handleResetClick = (event) => {
   event.preventDefault();
+  resetGame();
+};
+
+function resetGame() {
   saldo = 50;
   setInnerText(balance, `Saldo: ${saldo}€`);
   setInnerText(message, 'Vamos a jugar!');
@@ -52,4 +65,7 @@ btnReset.addEventListener('click', (event) => {
   btnReset.classList.add('collapsed');
   selectNumber.value = '0';
   selectedBet.value = '';
-});
+}
+
+btnPlay.addEventListener('click', handlePlayClick);
+btnReset.addEventListener('click', handleResetClick);
